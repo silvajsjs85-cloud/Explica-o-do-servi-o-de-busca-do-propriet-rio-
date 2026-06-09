@@ -1,119 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Instrutora Mary Raasch</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background:#f8f8f8;
-    color:#333;
+  background:#f4f6f8;
+  color:#1f2937;
 }
 
 .hero{
-    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+  background:linear-gradient(135deg,#111827,#1f2937);
+  color:white;
+  padding:45px 20px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-block;
+  background:#22c55e;
+  color:white;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:14px;
+  margin-bottom:18px;
+  font-weight:bold;
 }
 
 .hero h1{
-    font-size:2.3rem;
-    margin-bottom:15px;
+  font-size:32px;
+  line-height:1.2;
+  margin-bottom:15px;
 }
 
 .hero p{
-    font-size:1.1rem;
-    max-width:700px;
-    margin:auto;
+  font-size:17px;
+  line-height:1.5;
+  max-width:650px;
+  margin:0 auto 25px;
+  color:#e5e7eb;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 30px;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
+  display:inline-block;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  padding:16px 24px;
+  border-radius:12px;
+  font-weight:bold;
+  font-size:16px;
+  box-shadow:0 8px 18px rgba(37,211,102,.35);
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 20px;
+  max-width:900px;
+  margin:auto;
+  padding:25px 18px;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,.08);
-    margin-bottom:30px;
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
 }
 
-h2{
-    margin-bottom:20px;
-    color:#222;
+.card h2{
+  font-size:24px;
+  margin-bottom:15px;
+  color:#111827;
 }
 
-.benefits{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
 }
 
-.benefit{
-    background:#fff;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.05);
+.item{
+  background:#f9fafb;
+  padding:18px;
+  border-radius:14px;
+  border:1px solid #e5e7eb;
 }
 
-.form-group{
-    margin-bottom:15px;
+.item strong{
+  display:block;
+  margin-bottom:6px;
+  color:#111827;
+}
+
+.form-box{
+  background:linear-gradient(135deg,#ffffff,#f0fdf4);
+  border:2px solid #bbf7d0;
 }
 
 input,select{
-    width:100%;
-    padding:12px;
-    border:1px solid #ddd;
-    border-radius:8px;
+  width:100%;
+  padding:15px;
+  margin:8px 0;
+  border:1px solid #d1d5db;
+  border-radius:12px;
+  font-size:16px;
 }
 
 button{
-    width:100%;
-    background:#25D366;
-    color:white;
-    border:none;
-    padding:15px;
-    border-radius:8px;
-    font-size:16px;
-    cursor:pointer;
+  width:100%;
+  margin-top:12px;
+  padding:16px;
+  border:none;
+  border-radius:12px;
+  background:#25D366;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.small{
+  font-size:13px;
+  color:#6b7280;
+  margin-top:10px;
+  text-align:center;
+}
+
+.highlight{
+  background:#111827;
+  color:white;
+  text-align:center;
+}
+
+.highlight h2{
+  color:white;
 }
 
 footer{
-    text-align:center;
-    padding:30px;
-    background:#111;
-    color:white;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+  color:#6b7280;
+}
+
+.whatsapp-float{
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  background:#25D366;
+  color:white;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+@media(max-width:600px){
+  .hero h1{
+    font-size:27px;
+  }
+
+  .hero{
+    padding:38px 18px;
+  }
 }
 </style>
 </head>
@@ -121,133 +184,137 @@ footer{
 <body>
 
 <section class="hero">
-    <h1>🚗 Aprenda a Dirigir com Segurança e Confiança</h1>
+  <div class="badge">🚗 Mais de 15 anos de experiência</div>
 
-    <p>
-        Aulas práticas com Mary Raasch.
-        Mais de 15 anos ajudando alunos a vencer o medo de dirigir,
-        ganhar confiança e se preparar para o trânsito.
-    </p>
+  <h1>Aprenda a dirigir com segurança e confiança</h1>
 
-    <a href="#formulario" class="btn">
-        QUERO AGENDAR MINHA AULA
-    </a>
+  <p>
+    Aulas práticas com a Instrutora Mary Raasch para quem está tirando CNH,
+    tem medo de dirigir ou deseja aperfeiçoar sua direção no dia a dia.
+  </p>
+
+  <a href="#formulario" class="btn">QUERO AGENDAR MINHA AULA</a>
 </section>
 
-<div class="container">
+<main class="container">
 
-    <div class="card">
-        <h2>Por que escolher a Mary?</h2>
+  <section class="card">
+    <h2>Essa aula é para você que:</h2>
 
-        <div class="benefits">
+    <div class="grid">
+      <div class="item">
+        <strong>😰 Tem medo de dirigir</strong>
+        Treine com paciência, segurança e acompanhamento.
+      </div>
 
-            <div class="benefit">
-                <h3>👩‍🏫 Experiência</h3>
-                <p>Mais de 15 anos de atuação como instrutora.</p>
-            </div>
+      <div class="item">
+        <strong>🪪 Está tirando CNH</strong>
+        Ganhe mais prática e confiança para sua aprovação.
+      </div>
 
-            <div class="benefit">
-                <h3>🚗 Treinamento Prático</h3>
-                <p>Aulas personalizadas conforme sua necessidade.</p>
-            </div>
+      <div class="item">
+        <strong>🚦 Quer dirigir melhor</strong>
+        Aperfeiçoe baliza, trânsito, estacionamento e direção urbana.
+      </div>
 
-            <div class="benefit">
-                <h3>🛡️ Mais Confiança</h3>
-                <p>Perca o medo de dirigir e evolua com segurança.</p>
-            </div>
-
-            <div class="benefit">
-                <h3>🎯 Foco no Resultado</h3>
-                <p>Preparação para aprovação e direção do dia a dia.</p>
-            </div>
-
-        </div>
+      <div class="item">
+        <strong>🚗 Já tem habilitação</strong>
+        Volte a dirigir com mais segurança e tranquilidade.
+      </div>
     </div>
+  </section>
 
-    <div class="card" id="formulario">
+  <section class="card form-box" id="formulario">
+    <h2>Solicite atendimento pelo WhatsApp</h2>
 
-        <h2>Solicite Atendimento</h2>
+    <p>Preencha seus dados abaixo e fale diretamente com a Instrutora Mary.</p>
 
-        <form onsubmit="enviarLead(event)">
+    <input type="text" id="nome" placeholder="Seu nome" required />
 
-            <div class="form-group">
-                <input type="text" id="nome" placeholder="Seu nome" required>
-            </div>
+    <input type="tel" id="telefone" placeholder="Seu WhatsApp" required />
 
-            <div class="form-group">
-                <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
-            </div>
+    <select id="objetivo" required>
+      <option value="">Qual seu objetivo?</option>
+      <option value="Tirar CNH">Tirar CNH</option>
+      <option value="Perder o medo de dirigir">Perder o medo de dirigir</option>
+      <option value="Aperfeiçoar a direção">Aperfeiçoar a direção</option>
+      <option value="Voltar a dirigir">Voltar a dirigir</option>
+      <option value="Outro">Outro</option>
+    </select>
 
-            <div class="form-group">
-                <select id="objetivo" required>
-                    <option value="">Qual seu objetivo?</option>
-                    <option>Tirar CNH</option>
-                    <option>Perder o medo de dirigir</option>
-                    <option>Aperfeiçoar a direção</option>
-                    <option>Outro</option>
-                </select>
-            </div>
+    <button onclick="enviarLead()">FALAR COM A MARY AGORA</button>
 
-            <button type="submit">
-                RECEBER ATENDIMENTO
-            </button>
+    <p class="small">
+      Ao clicar, você será direcionado para o WhatsApp com a mensagem pronta.
+    </p>
+  </section>
 
-        </form>
+  <section class="card">
+    <h2>Sobre a Instrutora Mary</h2>
 
-    </div>
+    <p>
+      Mary Raasch atua como instrutora autônoma, ajudando alunos a desenvolverem
+      segurança, confiança e habilidade ao volante.
+    </p>
 
-    <div class="card">
-        <h2>Sobre a Instrutora Mary</h2>
+    <br>
 
-        <p>
-            Mary Raasch atua há mais de 15 anos ajudando alunos a
-            desenvolver segurança, habilidade e confiança ao volante.
-            Seu método é baseado em prática, paciência e atendimento
-            personalizado.
-        </p>
+    <p>
+      Com mais de 15 anos de experiência, oferece aulas práticas personalizadas,
+      respeitando o ritmo e a dificuldade de cada aluno.
+    </p>
 
-        <br>
+    <br>
 
-        <p>
-            📍 Atendimento em Alta Floresta D'Oeste e região.
-        </p>
+    <p><strong>📍 Atendimento:</strong> Alta Floresta D'Oeste e região</p>
+    <p><strong>📱 WhatsApp:</strong> (69) 98437-2244</p>
+  </section>
 
-        <br>
+  <section class="card highlight">
+    <h2>Não deixe o medo te impedir de dirigir</h2>
 
-        <p>
-            📱 WhatsApp: (69) 98437-2244
-        </p>
-    </div>
+    <p>
+      Comece hoje a treinar com uma instrutora experiente e conquiste mais
+      liberdade, segurança e independência no trânsito.
+    </p>
 
-</div>
+    <br>
+
+    <a href="#formulario" class="btn">QUERO RECEBER ATENDIMENTO</a>
+  </section>
+
+</main>
 
 <footer>
-    © 2026 - Instrutora Mary Raasch
+  © 2026 - Instrutora Mary Raasch | Aulas práticas de direção
 </footer>
 
+<a class="whatsapp-float" href="#formulario">☏</a>
+
 <script>
-function enviarLead(event){
-    event.preventDefault();
+function enviarLead(){
+  const nome = document.getElementById("nome").value.trim();
+  const telefone = document.getElementById("telefone").value.trim();
+  const objetivo = document.getElementById("objetivo").value;
 
-    let nome = document.getElementById("nome").value;
-    let telefone = document.getElementById("telefone").value;
-    let objetivo = document.getElementById("objetivo").value;
+  if(!nome || !telefone || !objetivo){
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
 
-    let mensagem =
-`Olá Mary!
+  const mensagem =
+`📌 LEAD DO SITE
 
-Meu nome é ${nome}
-
+Nome: ${nome}
 WhatsApp: ${telefone}
-
 Objetivo: ${objetivo}
 
-Vim através do site e gostaria de mais informações sobre as aulas.`;
+Olá Mary! Encontrei seu contato através do seu site e gostaria de receber mais informações sobre as aulas práticas.`;
 
-    let url =
-`https://wa.me/5569984372244?text=${encodeURIComponent(mensagem)}`;
+  const numeroMary = "5569984372244";
+  const url = `https://wa.me/${numeroMary}?text=${encodeURIComponent(mensagem)}`;
 
-    window.location.href = url;
+  window.location.href = url;
 }
 </script>
 
