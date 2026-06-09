@@ -1,67 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Localização de Contato do Antigo Proprietário</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instrutora Mary Raasch</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:2.3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#222;
+}
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.benefit{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.05);
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+input,select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    color:white;
+}
+</style>
 </head>
+
 <body>
-  <h1>Localização de Contato do Antigo Proprietário do Veículo</h1>
 
-  <p>
-    Serviço para quem precisa regularizar um veículo e não consegue contato
-    com o antigo proprietário.
-  </p>
+<section class="hero">
+    <h1>🚗 Aprenda a Dirigir com Segurança e Confiança</h1>
 
-  <h2>O que fazemos?</h2>
-  <p>
-    Realizamos pesquisa para tentar localizar meios de contato do proprietário
-    registrado, utilizando sistema credenciado pelo Detran.
-  </p>
+    <p>
+        Aulas práticas com Mary Raasch.
+        Mais de 15 anos ajudando alunos a vencer o medo de dirigir,
+        ganhar confiança e se preparar para o trânsito.
+    </p>
 
-  <h2>Passo a passo</h2>
+    <a href="#formulario" class="btn">
+        QUERO AGENDAR MINHA AULA
+    </a>
+</section>
 
-  <h3>1. Envio das informações</h3>
-  <p>Você informa a placa do veículo ou os dados disponíveis no recibo.</p>
+<div class="container">
 
-  <h3>2. Análise inicial</h3>
-  <p>Verificamos a possibilidade da pesquisa e explicamos o prazo.</p>
+    <div class="card">
+        <h2>Por que escolher a Mary?</h2>
 
-  <h3>3. Pesquisa de localização</h3>
-  <p>A busca é realizada conforme as informações disponíveis.</p>
+        <div class="benefits">
 
-  <h3>4. Apresentação do resultado</h3>
-  <p>
-    Quando localizado, apresentamos os meios de contato encontrados.
-  </p>
+            <div class="benefit">
+                <h3>👩‍🏫 Experiência</h3>
+                <p>Mais de 15 anos de atuação como instrutora.</p>
+            </div>
 
-  <h3>5. Pagamento após a entrega</h3>
-  <p>
-    O pagamento é feito somente após a localização e apresentação do contato.
-  </p>
+            <div class="benefit">
+                <h3>🚗 Treinamento Prático</h3>
+                <p>Aulas personalizadas conforme sua necessidade.</p>
+            </div>
 
-  <h2>Valor do serviço</h2>
-  <p><strong>R$ 100,00</strong></p>
+            <div class="benefit">
+                <h3>🛡️ Mais Confiança</h3>
+                <p>Perca o medo de dirigir e evolua com segurança.</p>
+            </div>
 
-  <h2>Perguntas frequentes</h2>
+            <div class="benefit">
+                <h3>🎯 Foco no Resultado</h3>
+                <p>Preparação para aprovação e direção do dia a dia.</p>
+            </div>
 
-  <h3>O pagamento é antecipado?</h3>
-  <p>Não. O pagamento é feito somente após a entrega do resultado.</p>
+        </div>
+    </div>
 
-  <h3>Vocês fazem transferência?</h3>
-  <p>Não. Apenas localizamos meios de contato.</p>
+    <div class="card" id="formulario">
 
-  <h3>Vocês negociam com o proprietário?</h3>
-  <p>Não. Não fazemos intermediação ou negociação.</p>
+        <h2>Solicite Atendimento</h2>
 
-  <h3>Qual o prazo?</h3>
-  <p>De 30 minutos a 2 dias úteis.</p>
+        <form onsubmit="enviarLead(event)">
 
-  <h2>Importante</h2>
-  <p>
-    Não realizamos transferência, compra, venda, negociação, intermediação
-    ou serviço jurídico/documental. O serviço consiste exclusivamente na
-    pesquisa e localização de meios de contato.
-  </p>
+            <div class="form-group">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+            </div>
+
+            <div class="form-group">
+                <select id="objetivo" required>
+                    <option value="">Qual seu objetivo?</option>
+                    <option>Tirar CNH</option>
+                    <option>Perder o medo de dirigir</option>
+                    <option>Aperfeiçoar a direção</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                RECEBER ATENDIMENTO
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="card">
+        <h2>Sobre a Instrutora Mary</h2>
+
+        <p>
+            Mary Raasch atua há mais de 15 anos ajudando alunos a
+            desenvolver segurança, habilidade e confiança ao volante.
+            Seu método é baseado em prática, paciência e atendimento
+            personalizado.
+        </p>
+
+        <br>
+
+        <p>
+            📍 Atendimento em Alta Floresta D'Oeste e região.
+        </p>
+
+        <br>
+
+        <p>
+            📱 WhatsApp: (69) 98437-2244
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Instrutora Mary Raasch
+</footer>
+
+<script>
+function enviarLead(event){
+    event.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let telefone = document.getElementById("telefone").value;
+    let objetivo = document.getElementById("objetivo").value;
+
+    let mensagem =
+`Olá Mary!
+
+Meu nome é ${nome}
+
+WhatsApp: ${telefone}
+
+Objetivo: ${objetivo}
+
+Vim através do site e gostaria de mais informações sobre as aulas.`;
+
+    let url =
+`https://wa.me/5569984372244?text=${encodeURIComponent(mensagem)}`;
+
+    window.location.href = url;
+}
+</script>
+
 </body>
 </html>
