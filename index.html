@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Instrutora Mary Raasch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instrutora Mary Raasch | Aulas Práticas em Cacoal</title>
 
 <style>
 *{
@@ -14,40 +14,49 @@
 }
 
 body{
-  background:#f4f6f8;
-  color:#1f2937;
+  background:#f5f5f5;
+  color:#1a1a1a;
 }
 
 .hero{
-  background:linear-gradient(135deg,#111827,#1f2937);
+  min-height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+  url("https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80");
+  background-size:cover;
+  background-position:center;
   color:white;
-  padding:45px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
+  padding:30px;
+}
+
+.hero-content{
+  max-width:720px;
 }
 
 .badge{
   display:inline-block;
-  background:#22c55e;
-  color:white;
-  padding:8px 14px;
-  border-radius:999px;
-  font-size:14px;
-  margin-bottom:18px;
+  background:#facc15;
+  color:#000;
+  padding:8px 16px;
+  border-radius:30px;
   font-weight:bold;
+  margin-bottom:20px;
 }
 
-.hero h1{
-  font-size:32px;
-  line-height:1.2;
-  margin-bottom:15px;
+h1{
+  font-size:42px;
+  line-height:1.15;
+  margin-bottom:18px;
 }
 
 .hero p{
-  font-size:17px;
+  font-size:19px;
   line-height:1.5;
-  max-width:650px;
-  margin:0 auto 25px;
-  color:#e5e7eb;
+  margin-bottom:25px;
 }
 
 .btn{
@@ -55,74 +64,77 @@ body{
   background:#25D366;
   color:white;
   text-decoration:none;
-  padding:16px 24px;
+  padding:16px 26px;
   border-radius:12px;
   font-weight:bold;
-  font-size:16px;
-  box-shadow:0 8px 18px rgba(37,211,102,.35);
+  box-shadow:0 10px 25px rgba(37,211,102,.35);
 }
 
 .container{
-  max-width:900px;
+  max-width:1050px;
   margin:auto;
-  padding:25px 18px;
+  padding:35px 18px;
 }
 
-.card{
+.section{
   background:white;
-  border-radius:18px;
-  padding:25px;
-  margin-bottom:20px;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  border-radius:22px;
+  padding:30px;
+  margin-bottom:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.card h2{
-  font-size:24px;
+h2{
+  font-size:28px;
   margin-bottom:15px;
-  color:#111827;
 }
 
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  margin-top:20px;
 }
 
-.item{
-  background:#f9fafb;
-  padding:18px;
-  border-radius:14px;
-  border:1px solid #e5e7eb;
+.card{
+  background:#fafafa;
+  border:1px solid #eee;
+  border-radius:16px;
+  padding:20px;
 }
 
-.item strong{
+.card strong{
   display:block;
-  margin-bottom:6px;
-  color:#111827;
+  margin-bottom:8px;
+  font-size:18px;
 }
 
-.form-box{
-  background:linear-gradient(135deg,#ffffff,#f0fdf4);
-  border:2px solid #bbf7d0;
+.form{
+  background:linear-gradient(135deg,#111,#333);
+  color:white;
+}
+
+.form h2{
+  color:white;
 }
 
 input,select{
   width:100%;
   padding:15px;
-  margin:8px 0;
-  border:1px solid #d1d5db;
+  margin-top:12px;
+  border:none;
   border-radius:12px;
   font-size:16px;
 }
 
 button{
   width:100%;
-  margin-top:12px;
+  margin-top:16px;
   padding:16px;
   border:none;
   border-radius:12px;
-  background:#25D366;
-  color:white;
+  background:#facc15;
+  color:#000;
   font-size:17px;
   font-weight:bold;
   cursor:pointer;
@@ -130,52 +142,47 @@ button{
 
 .small{
   font-size:13px;
-  color:#6b7280;
-  margin-top:10px;
+  color:#ddd;
   text-align:center;
+  margin-top:12px;
 }
 
 .highlight{
-  background:#111827;
-  color:white;
+  background:#facc15;
   text-align:center;
-}
-
-.highlight h2{
-  color:white;
 }
 
 footer{
   text-align:center;
   padding:25px;
-  font-size:14px;
-  color:#6b7280;
+  background:#111;
+  color:white;
 }
 
-.whatsapp-float{
+.whatsapp{
   position:fixed;
-  bottom:18px;
   right:18px;
+  bottom:18px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
   background:#25D366;
   color:white;
-  width:58px;
-  height:58px;
-  border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:28px;
+  font-size:30px;
   text-decoration:none;
-  box-shadow:0 8px 20px rgba(0,0,0,.25);
+  box-shadow:0 10px 25px rgba(0,0,0,.35);
 }
 
 @media(max-width:600px){
-  .hero h1{
-    font-size:27px;
+  h1{
+    font-size:32px;
   }
 
-  .hero{
-    padding:38px 18px;
+  .hero p{
+    font-size:17px;
   }
 }
 </style>
@@ -184,112 +191,111 @@ footer{
 <body>
 
 <section class="hero">
-  <div class="badge">🚗 Mais de 15 anos de experiência</div>
+  <div class="hero-content">
+    <div class="badge">🚗 Instrutora Autônoma em Cacoal</div>
 
-  <h1>Aprenda a dirigir com segurança e confiança</h1>
+    <h1>Aprenda a dirigir com segurança e confiança</h1>
 
-  <p>
-    Aulas práticas com a Instrutora Mary Raasch para quem está tirando CNH,
-    tem medo de dirigir ou deseja aperfeiçoar sua direção no dia a dia.
-  </p>
+    <p>
+      Aulas práticas personalizadas com a Instrutora Mary Raasch para quem está tirando CNH,
+      tem medo de dirigir ou deseja aperfeiçoar sua direção no dia a dia.
+    </p>
 
-  <a href="#formulario" class="btn">QUERO AGENDAR MINHA AULA</a>
+    <a href="#formulario" class="btn">QUERO AGENDAR MINHA AULA</a>
+  </div>
 </section>
 
 <main class="container">
 
-  <section class="card">
-    <h2>Essa aula é para você que:</h2>
+<section class="section">
+  <h2>Essa aula é para você que:</h2>
 
-    <div class="grid">
-      <div class="item">
-        <strong>😰 Tem medo de dirigir</strong>
-        Treine com paciência, segurança e acompanhamento.
-      </div>
-
-      <div class="item">
-        <strong>🪪 Está tirando CNH</strong>
-        Ganhe mais prática e confiança para sua aprovação.
-      </div>
-
-      <div class="item">
-        <strong>🚦 Quer dirigir melhor</strong>
-        Aperfeiçoe baliza, trânsito, estacionamento e direção urbana.
-      </div>
-
-      <div class="item">
-        <strong>🚗 Já tem habilitação</strong>
-        Volte a dirigir com mais segurança e tranquilidade.
-      </div>
+  <div class="grid">
+    <div class="card">
+      <strong>😰 Tem medo de dirigir</strong>
+      Treine com paciência, segurança e acompanhamento.
     </div>
-  </section>
 
-  <section class="card form-box" id="formulario">
-    <h2>Solicite atendimento pelo WhatsApp</h2>
+    <div class="card">
+      <strong>🪪 Está tirando CNH</strong>
+      Ganhe mais prática para sua aprovação.
+    </div>
 
-    <p>Preencha seus dados abaixo e fale diretamente com a Instrutora Mary.</p>
+    <div class="card">
+      <strong>🚦 Quer dirigir melhor</strong>
+      Pratique trânsito, baliza, estacionamento e direção urbana.
+    </div>
 
-    <input type="text" id="nome" placeholder="Seu nome" required />
+    <div class="card">
+      <strong>🚗 Já tem habilitação</strong>
+      Volte a dirigir com mais confiança e tranquilidade.
+    </div>
+  </div>
+</section>
 
-    <input type="tel" id="telefone" placeholder="Seu WhatsApp" required />
+<section class="section">
+  <h2>Por que escolher a Mary?</h2>
 
-    <select id="objetivo" required>
-      <option value="">Qual seu objetivo?</option>
-      <option value="Tirar CNH">Tirar CNH</option>
-      <option value="Perder o medo de dirigir">Perder o medo de dirigir</option>
-      <option value="Aperfeiçoar a direção">Aperfeiçoar a direção</option>
-      <option value="Voltar a dirigir">Voltar a dirigir</option>
-      <option value="Outro">Outro</option>
-    </select>
+  <p>
+    Com mais de 15 anos de experiência, Mary Raasch ajuda alunos a desenvolverem
+    confiança, segurança e habilidade ao volante, respeitando o ritmo de cada pessoa.
+  </p>
 
-    <button onclick="enviarLead()">FALAR COM A MARY AGORA</button>
+  <div class="grid">
+    <div class="card"><strong>✅ Atendimento personalizado</strong>Aulas adaptadas à sua necessidade.</div>
+    <div class="card"><strong>✅ Mais confiança</strong>Treino focado em segurança no trânsito.</div>
+    <div class="card"><strong>✅ Experiência prática</strong>Mais de 15 anos auxiliando alunos.</div>
+    <div class="card"><strong>✅ Cacoal e região</strong>Atendimento local e direto pelo WhatsApp.</div>
+  </div>
+</section>
 
-    <p class="small">
-      Ao clicar, você será direcionado para o WhatsApp com a mensagem pronta.
-    </p>
-  </section>
+<section class="section form" id="formulario">
+  <h2>Solicite atendimento pelo WhatsApp</h2>
 
-  <section class="card">
-    <h2>Sobre a Instrutora Mary</h2>
+  <p>Preencha os dados abaixo e fale diretamente com a Instrutora Mary.</p>
 
-    <p>
-      Mary Raasch atua como instrutora autônoma, ajudando alunos a desenvolverem
-      segurança, confiança e habilidade ao volante.
-    </p>
+  <input type="text" id="nome" placeholder="Seu nome">
 
-    <br>
+  <input type="tel" id="telefone" placeholder="Seu WhatsApp">
 
-    <p>
-      Com mais de 15 anos de experiência, oferece aulas práticas personalizadas,
-      respeitando o ritmo e a dificuldade de cada aluno.
-    </p>
+  <select id="objetivo">
+    <option value="">Qual seu objetivo?</option>
+    <option value="Tirar CNH">Tirar CNH</option>
+    <option value="Perder o medo de dirigir">Perder o medo de dirigir</option>
+    <option value="Aperfeiçoar a direção">Aperfeiçoar a direção</option>
+    <option value="Voltar a dirigir">Voltar a dirigir</option>
+    <option value="Outro">Outro</option>
+  </select>
 
-    <br>
+  <button onclick="enviarLead()">FALAR COM A MARY AGORA</button>
 
-    <p><strong>📍 Atendimento:</strong> Alta Floresta D'Oeste e região</p>
-    <p><strong>📱 WhatsApp:</strong> (69) 98437-2244</p>
-  </section>
+  <p class="small">
+    Você será direcionado para o WhatsApp com a mensagem pronta.
+  </p>
+</section>
 
-  <section class="card highlight">
-    <h2>Não deixe o medo te impedir de dirigir</h2>
+<section class="section highlight">
+  <h2>Não deixe o medo te impedir de dirigir</h2>
 
-    <p>
-      Comece hoje a treinar com uma instrutora experiente e conquiste mais
-      liberdade, segurança e independência no trânsito.
-    </p>
+  <p>
+    Comece hoje a treinar com uma instrutora experiente e conquiste mais liberdade,
+    segurança e independência no trânsito.
+  </p>
 
-    <br>
+  <br>
 
-    <a href="#formulario" class="btn">QUERO RECEBER ATENDIMENTO</a>
-  </section>
+  <a href="#formulario" class="btn">QUERO RECEBER ATENDIMENTO</a>
+</section>
 
 </main>
 
 <footer>
-  © 2026 - Instrutora Mary Raasch | Aulas práticas de direção
+  📍 Cacoal - RO e região<br>
+  📱 WhatsApp: (69) 98437-2244<br><br>
+  © 2026 - Instrutora Mary Raasch
 </footer>
 
-<a class="whatsapp-float" href="#formulario">☏</a>
+<a href="#formulario" class="whatsapp">☏</a>
 
 <script>
 function enviarLead(){
@@ -298,7 +304,7 @@ function enviarLead(){
   const objetivo = document.getElementById("objetivo").value;
 
   if(!nome || !telefone || !objetivo){
-    alert("Por favor, preencha todos os campos.");
+    alert("Preencha todos os campos para continuar.");
     return;
   }
 
@@ -309,7 +315,7 @@ Nome: ${nome}
 WhatsApp: ${telefone}
 Objetivo: ${objetivo}
 
-Olá Mary! Encontrei seu contato através do seu site e gostaria de receber mais informações sobre as aulas práticas.`;
+Olá Mary! Encontrei seu contato através do seu site e gostaria de receber mais informações sobre as aulas práticas em Cacoal.`;
 
   const numeroMary = "5569984372244";
   const url = `https://wa.me/${numeroMary}?text=${encodeURIComponent(mensagem)}`;
